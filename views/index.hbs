@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Placement Cell</title>
+  <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+</head>
+<body>
+  <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
+    <a class="navbar-brand" href="#">Placement Cell</a>
+    <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav"
+      aria-expanded="false" aria-label="Toggle navigation">
+      <span class="navbar-toggler-icon"></span>
+    </button>
+    <div class="collapse navbar-collapse" id="navbarNav">
+      <ul class="navbar-nav ml-auto">
+        <li class="nav-item">
+          <a class="nav-link" href="signup.php">Sign Up</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="login.php">Login</a>
+        </li>
+		   <li class="nav-item">
+          <a class="nav-link" href="#">Home</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="#">Students</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="#">Companies</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="#">Placements</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="#">Logout</a>
+        </li>
+      </ul>
+    </div>
+  </nav>
+
+  <div class="container mt-5">
+    <h1>Welcome to Placement Cell Of MXPERTZ INFOLABS</h1>
+    <!-- Content goes here -->
+  </div>
+  <div class="container mt-5 shadow -p-5" style="width: 35%">
+    <h2>Registration Form</h2>
+     <form action="/data" method "POST">
+      <div class="mb-3">
+        <label for="username">Username:</label>
+        <input type="text" class="form-control" aria-describedby="usernameHelp" id="username" name="name" required autocomplete="off">
+      </div>
+       <div class="mb-3">
+        <label for="email">Email:</label>
+        <input type="email" class="form-control" aria-describedby="emailHelp" id="email" name="email" required autocomplete="off">
+      </div>
+      <div class="mb-3">
+        <label for="password">Password:</label>
+        <input type="password" class="form-control"  id="password" name="password" required autocomplete="off">
+      </div>
+       <div class="mb-3">
+        <label for="confirmPassword">Confirm Password:</label>
+        <input type="password" class="form-control" id="confirmPassword"  name="confirmPassword" required autocomplete="off" >
+      </div>
+      <div class="mb-3">
+        <label for="phone">Phone:</label>
+        <input type="tel" class="form-control" id="phone" aria-describedby="phoneHelp" name="phone" required autocomplete="off">
+      </div>
+      <button type="submit" class="btn btn-primary">Submit</button>
+    </form>
+  </div>
+
+  <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.1/dist/umd/popper.min.js"></script>
+  <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+</body>
+</html>
